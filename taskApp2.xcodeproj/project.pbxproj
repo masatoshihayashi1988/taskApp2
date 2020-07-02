@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		73422F2824A8DE1F000A92C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73422F2724A8DE1F000A92C0 /* Assets.xcassets */; };
 		73422F2B24A8DE1F000A92C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73422F2924A8DE1F000A92C0 /* LaunchScreen.storyboard */; };
 		73422F3324A8E070000A92C0 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73422F3224A8E070000A92C0 /* InputViewController.swift */; };
+		7356958B24ADE790001096D0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7356958A24ADE790001096D0 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		73422F2A24A8DE1F000A92C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73422F2C24A8DE1F000A92C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73422F3224A8E070000A92C0 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		7356958A24ADE790001096D0 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D9CF0E04CCB12939A4C98BD3 /* Pods-taskApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskApp2.release.xcconfig"; path = "Target Support Files/Pods-taskApp2/Pods-taskApp2.release.xcconfig"; sourceTree = "<group>"; };
 		E4B7EB4764D6DD2D19D0A7AC /* Pods_taskApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taskApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68AEAD6F2600563757F30FC /* Pods-taskApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskApp2.debug.xcconfig"; path = "Target Support Files/Pods-taskApp2/Pods-taskApp2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		73422F1D24A8DE1E000A92C0 /* taskApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				7356958A24ADE790001096D0 /* Task.swift */,
 				73422F1E24A8DE1E000A92C0 /* AppDelegate.swift */,
 				73422F2024A8DE1E000A92C0 /* SceneDelegate.swift */,
 				73422F2224A8DE1E000A92C0 /* ViewController.swift */,
@@ -91,7 +94,6 @@
 				F68AEAD6F2600563757F30FC /* Pods-taskApp2.debug.xcconfig */,
 				D9CF0E04CCB12939A4C98BD3 /* Pods-taskApp2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,6 +108,7 @@
 				73422F1724A8DE1E000A92C0 /* Sources */,
 				73422F1824A8DE1E000A92C0 /* Frameworks */,
 				73422F1924A8DE1E000A92C0 /* Resources */,
+				C7F055D644C3FDCC485057EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +188,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C7F055D644C3FDCC485057EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taskApp2/Pods-taskApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taskApp2/Pods-taskApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taskApp2/Pods-taskApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -195,6 +215,7 @@
 				73422F2324A8DE1E000A92C0 /* ViewController.swift in Sources */,
 				73422F1F24A8DE1E000A92C0 /* AppDelegate.swift in Sources */,
 				73422F2124A8DE1E000A92C0 /* SceneDelegate.swift in Sources */,
+				7356958B24ADE790001096D0 /* Task.swift in Sources */,
 				73422F3324A8E070000A92C0 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

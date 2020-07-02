@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: 520fd0f9f2ac6a9e3e33900df6b104fc5c9553fc
+PODS:
+  - Realm (3.20.0):
+    - Realm/Headers (= 3.20.0)
+  - Realm/Headers (3.20.0)
+  - RealmSwift (3.20.0):
+    - Realm (= 3.20.0)
+
+DEPENDENCIES:
+  - RealmSwift (= 3.20.0)
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
+  RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
+
+PODFILE CHECKSUM: 5d84ca36130303a45922d5d5969130f59fb839c7
 
 COCOAPODS: 1.9.3
